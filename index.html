@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Juscarni Nsayi · Étudiant ingénieur, data et backend Java</title>
+<meta name="description" content="Portfolio de Nsayi Juscarni Geoffroy, étudiant en 3e année d'ingénierie informatique à l'Université de Pérouse : data science, machine learning en Python et développement backend Java avec Spring Boot.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Juscarni Nsayi · Étudiant ingénieur, data et backend Java">
+<meta property="og:description" content="Machine learning en Python, API REST en Java et Spring Boot. Projets, compétences et parcours.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/init.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#accueil" aria-label="Juscarni Nsayi, retour en haut"><span class="logo__mark" aria-hidden="true">J</span>Juscarni Nsayi</a>
+    <nav class="nav__links" id="nav-links" aria-label="Navigation principale">
+      <a href="#apropos">À propos</a>
+      <a href="#experience">Expérience</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#parcours">Parcours</a>
+    </nav>
+    <a class="btn btn--primary" href="#contact">Me contacter</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Ouvrir le menu">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path class="l1" d="M3 6h14"/><path class="l2" d="M3 14h14"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- ================================================================ HERO -->
+  <section class="hero" id="accueil" aria-labelledby="hero-title">
+    <canvas class="hero__net" aria-hidden="true"></canvas>
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="wrap">
+      <div>
+        <span class="status in d-0"><i aria-hidden="true"></i>En recherche d'un stage ou d'un premier poste junior</span>
+        <h1 id="hero-title" class="in d-1">Nsayi Juscarni <span class="last">Geoffroy</span></h1>
+        <p class="hero__role in d-2">Étudiant ingénieur en informatique, entre <b>data science</b> et <b>backend Java</b>.</p>
+        <p class="hero__bio in d-3">En 3e année à l'Université de Pérouse, je construis des modèles de machine learning en Python et des API REST en Java avec Spring Boot. Pendant mon stage, j'ai travaillé sur plus de 640 000 mesures de capteurs IoT.</p>
+        <div class="hero__cta in d-4">
+          <a class="btn btn--primary" href="#projets">Voir mes projets <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          <a class="btn btn--ghost" href="https://github.com/juscarni" target="_blank" rel="noopener"><img class="btn__icon btn__icon--invert" src="assets/icons/github.svg" alt="">GitHub</a>
+        </div>
+        <div class="hero__meta in d-5">
+          <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 14s5-4.2 5-8A5 5 0 0 0 3 6c0 3.8 5 8 5 8Z"/><circle cx="8" cy="6" r="1.8"/></svg>Pérouse, Ombrie (Italie)</span>
+          <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 6 8 3l6.5 3L8 9 1.5 6Z"/><path d="M4 7.3v3.2c2.2 1.4 5.8 1.4 8 0V7.3"/></svg>Université de Pérouse, 3e année</span>
+          <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c1.7 1.8 2.5 3.8 2.5 6S9.7 12.2 8 14C6.3 12.2 5.5 10.2 5.5 8S6.3 3.8 8 2Z"/></svg>Français, italien, anglais</span>
+        </div>
+      </div>
+
+      <figure class="code-card in d-3" aria-label="Fiche de profil sous forme de code : rôle, formation, stage, langages et objectif">
+        <div class="code-card__bar" aria-hidden="true"><i></i><i></i><i></i><span>profil.py</span></div>
+<pre aria-hidden="true"><span class="ln">1</span><span class="n">juscarni</span> <span class="p">=</span> {
+<span class="ln">2</span>  <span class="s">"role"</span><span class="p">:</span>      <span class="s">"Étudiant ingénieur"</span>,
+<span class="ln">3</span>  <span class="s">"ecole"</span><span class="p">:</span>     <span class="s">"Université de Pérouse"</span>,
+<span class="ln">4</span>  <span class="s">"stage"</span><span class="p">:</span>     <span class="s">"ML · HVAC · 225 h"</span>,
+<span class="ln">5</span>  <span class="s">"data"</span><span class="p">:</span>      [<span class="s">"Python"</span>, <span class="s">"Pandas"</span>, <span class="s">"XGBoost"</span>],
+<span class="ln">6</span>  <span class="s">"backend"</span><span class="p">:</span>   [<span class="s">"Java 21"</span>, <span class="s">"Spring Boot"</span>],
+<span class="ln">7</span>  <span class="s">"bdd"</span><span class="p">:</span>       [<span class="s">"PostgreSQL"</span>, <span class="s">"SQL"</span>],
+<span class="ln">8</span>  <span class="s">"objectif"</span><span class="p">:</span>  <span class="s">"poste junior"</span>,
+<span class="ln">9</span>}</pre>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================================================================ ABOUT -->
+  <section class="section" id="apropos" aria-labelledby="apropos-title">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow">À propos</span>
+        <h2 id="apropos-title">Des données qui servent, du code qui tient.</h2>
+      </div>
+      <div class="about">
+        <div class="about__text reveal">
+          <p>Je suis étudiant en <strong>3e année de licence en ingénierie informatique et électronique</strong> à l'Université de Pérouse, où j'ai étudié les algorithmes, les structures de données, les bases de données, les systèmes d'exploitation et l'architecture des ordinateurs.</p>
+          <p>Côté <strong>data</strong>, j'analyse et je prépare des données avec Pandas, puis j'entraîne des modèles de régression avec Scikit-learn, Random Forest et XGBoost. Côté <strong>backend</strong>, je conçois des API REST en Java avec Spring Boot, JPA, Hibernate, PostgreSQL et Spring Security.</p>
+          <p>Ce qui relie les deux : aimer résoudre des problèmes concrets et écrire du code structuré, que d'autres peuvent maintenir.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><b><span data-count="225">225</span><em> h</em></b><span>de stage en data science et machine learning</span></div>
+          <div class="stat"><b><span data-count="640">640</span>k<em>+</em></b><span>observations de capteurs IoT analysées</span></div>
+          <div class="stat"><b><span data-count="7">7</span></b><span>projets, de l'analyse de données aux jeux en Java</span></div>
+          <div class="stat"><b><span data-count="3">3</span></b><span>langues : français, italien, anglais</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ EXPERIENCE -->
+  <section class="section" id="experience" aria-labelledby="experience-title">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow">Expérience</span>
+        <h2 id="experience-title">Stage en data science</h2>
+      </div>
+      <article class="exp reveal">
+        <div class="exp__when"><b>2026</b><span>225 heures</span></div>
+        <div>
+          <h3>Machine learning pour l'efficacité thermique HVAC</h3>
+          <p class="exp__org">Stage en data science et machine learning</p>
+          <ul>
+            <li>Développement de modèles qui <strong>prédisent la durée des cycles de chauffage</strong> d'installations HVAC.</li>
+            <li>Analyse et préparation de <strong>plus de 640 000 observations</strong> issues de capteurs IoT.</li>
+            <li>Régression et feature engineering avec <strong>Python, Pandas, Scikit-learn, Random Forest et XGBoost</strong>.</li>
+            <li>Évaluation des performances par <strong>MAE et R²</strong>, avec une analyse zone thermique par zone thermique.</li>
+          </ul>
+          <div class="exp__foot">
+            <div class="pills">
+              <span class="pill"><img src="assets/icons/python.svg" alt="">Python</span>
+              <span class="pill"><img src="assets/icons/pandas-icon.svg" alt="">Pandas</span>
+              <span class="pill"><img src="assets/icons/scikitlearn.svg" alt="">Scikit-learn</span>
+              <span class="pill">XGBoost</span>
+              <span class="pill"><img src="assets/icons/jupyter.svg" alt="">Jupyter</span>
+            </div>
+            <a class="project__link" href="https://github.com/juscarni/machine-learning-hvac-prediction" target="_blank" rel="noopener">Voir le code sur GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================================================================ PROJECTS -->
+  <section class="section" id="projets" aria-labelledby="projets-title">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow">Projets</span>
+        <h2 id="projets-title">Ce que j'ai construit</h2>
+        <p>Des API REST en Spring Boot, des applications d'analyse de données en Python et des jeux en Java Swing.</p>
+      </div>
+
+      <!-- ============ showcase: Aegis Defender, the game, with its own screens ============ -->
+      <article class="aegis reveal" aria-labelledby="aegis-title">
+        <div class="aegis__stars" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="aegis__copy">
+          <div class="project__top"><span class="tag"><i aria-hidden="true"></i>Jeu vidéo · à la une</span><span class="year">2026</span></div>
+          <h3 id="aegis-title" class="aegis__title">Aegis Defender</h3>
+          <p class="aegis__motto">Protéger <span aria-hidden="true">·</span> Résister <span aria-hidden="true">·</span> Survivre</p>
+          <p class="aegis__lead">Un shoot'em up spatial en 2D, écrit de A à Z en Java Swing sur une architecture MVC. Le joueur pilote l'Aegis à la souris : il attaque au laser, se protège avec un bouclier d'énergie et doit gérer la surchauffe pour tenir vague après vague.</p>
+          <ul class="aegis__feats">
+            <li>
+              <span class="aegis__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+              <b>Parade</b><span>Bouclier activé au bon moment : le tir ennemi est détruit et renvoyé, renforcé.</span>
+            </li>
+            <li>
+              <span class="aegis__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14.8V4.5a2 2 0 1 1 4 0v10.3a4 4 0 1 1-4 0Z"/><path d="M12 11v6"/></svg></span>
+              <b>Surchauffe</b><span>Attaquer et se défendre chauffent l'arme ; à 100 %, plus aucune capacité.</span>
+            </li>
+            <li>
+              <span class="aegis__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
+              <b>IA ennemie</b><span>Quatre comportements : Kamikaze, Posamine, Minelayer et Berserker blindé.</span>
+            </li>
+            <li>
+              <span class="aegis__ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+              <b>Vagues et scores</b><span>Difficulté croissante, collisions, états de jeu et tableau des meilleurs scores.</span>
+            </li>
+          </ul>
+          <div class="aegis__foot">
+            <div class="pills">
+              <span class="pill"><img src="assets/icons/java.svg" alt="">Java</span>
+              <span class="pill">Swing</span>
+              <span class="pill">MVC</span>
+              <span class="pill">Temps réel</span>
+            </div>
+            <div class="aegis__cta">
+              <a class="btn btn--primary" href="https://github.com/juscarni/Aegis-Defender" target="_blank" rel="noopener">Voir le code <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="aegis__stage" data-gallery>
+          <div class="screen">
+            <span class="screen__corner screen__corner--tl" aria-hidden="true"></span><span class="screen__corner screen__corner--tr" aria-hidden="true"></span>
+            <span class="screen__corner screen__corner--bl" aria-hidden="true"></span><span class="screen__corner screen__corner--br" aria-hidden="true"></span>
+            <button class="screen__view" type="button" aria-label="Agrandir la capture affichée">
+              <img class="is-on" src="assets/img/aegis/aegis-gameplay.png" alt="Aegis Defender en partie : le vaisseau du joueur tire sur des chasseurs rouges et un croiseur violet, score 800, vague 2" width="677" height="886" data-shot="0">
+              <img src="assets/img/aegis/aegis-menu.png" alt="Menu principal d'Aegis Defender : jouer, comment jouer, meilleurs scores, réglages, crédits, quitter" width="690" height="891" data-shot="1" loading="lazy">
+              <img src="assets/img/aegis/aegis-how-to-play.png" alt="Écran Comment jouer : commandes à la souris, système de surchauffe, parade et les quatre types d'ennemis" width="690" height="871" data-shot="2" loading="lazy">
+              <img src="assets/img/aegis/aegis-game-over.png" alt="Écran de fin de partie : score 3250, vague 4, 27 ennemis détruits, meilleur score 4400" width="680" height="896" data-shot="3" loading="lazy">
+              <span class="screen__scan" aria-hidden="true"></span>
+              <span class="screen__zoom" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M9.5 2.5h4v4M6.5 13.5h-4v-4M13.5 2.5 9 7M2.5 13.5 7 9"/></svg></span>
+            </button>
+            <span class="screen__label" aria-live="polite"><i aria-hidden="true"></i><span data-shot-label>En partie</span></span>
+          </div>
+          <div class="thumbs" role="tablist" aria-label="Captures d'Aegis Defender">
+            <button class="thumb is-on" type="button" role="tab" aria-selected="true" data-to="0" data-label="En partie"><img src="assets/img/aegis/aegis-gameplay.png" alt=""><span>En partie</span><i class="thumb__bar" aria-hidden="true"></i></button>
+            <button class="thumb" type="button" role="tab" aria-selected="false" data-to="1" data-label="Menu principal"><img src="assets/img/aegis/aegis-menu.png" alt="" loading="lazy"><span>Menu</span><i class="thumb__bar" aria-hidden="true"></i></button>
+            <button class="thumb" type="button" role="tab" aria-selected="false" data-to="2" data-label="Comment jouer"><img src="assets/img/aegis/aegis-how-to-play.png" alt="" loading="lazy"><span>Règles</span><i class="thumb__bar" aria-hidden="true"></i></button>
+            <button class="thumb" type="button" role="tab" aria-selected="false" data-to="3" data-label="Fin de partie"><img src="assets/img/aegis/aegis-game-over.png" alt="" loading="lazy"><span>Game over</span><i class="thumb__bar" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </article>
+
+      <div class="projects">
+        <a class="project project--featured reveal" href="https://github.com/juscarni/employee-crud-springboot-postgresql" target="_blank" rel="noopener">
+          <div class="project__top"><span class="tag"><i aria-hidden="true"></i>Backend</span><span class="year">2026</span></div>
+          <h3>Employee Management API</h3>
+          <p>Une API REST complète de gestion des employés, avec une persistance réelle sur PostgreSQL via JPA et Hibernate.</p>
+          <ul>
+            <li>Relation Many-to-Many entre Employee et Role, table de jointure gérée par Hibernate</li>
+            <li>Authentification Basic Auth et rôles USER, MANAGER, ADMIN avec Spring Security</li>
+            <li>Mise à jour partielle (PATCH) validée, champs sensibles protégés</li>
+            <li>Erreurs centralisées (400, 401, 403, 404) et documentation Swagger UI</li>
+          </ul>
+          <div class="routes" aria-hidden="true">
+            <div><b class="v-get">GET</b><code>/api/employees</code><span>USER</span></div>
+            <div><b class="v-post">POST</b><code>/api/employees</code><span>MANAGER</span></div>
+            <div><b class="v-patch">PATCH</b><code>/api/employees/{id}</code><span>MANAGER</span></div>
+            <div><b class="v-del">DELETE</b><code>/api/employees/{id}</code><span>ADMIN</span></div>
+          </div>
+          <div class="pills">
+            <span class="pill"><img src="assets/icons/java.svg" alt="">Java</span>
+            <span class="pill"><img src="assets/icons/spring.svg" alt="">Spring Boot</span>
+            <span class="pill"><img src="assets/icons/hibernate.svg" alt="">Hibernate</span>
+            <span class="pill"><img src="assets/icons/postgres.svg" alt="">PostgreSQL</span>
+            <span class="pill"><img src="assets/icons/swagger.svg" alt="">Swagger</span>
+          </div>
+          <span class="project__link">Voir sur GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></span>
+        </a>
+
+        <article class="project reveal">
+          <div class="project__top"><span class="tag"><i aria-hidden="true"></i>Data</span><span class="year">2025</span></div>
+          <h3>Dashboard d'analyse en Streamlit</h3>
+          <p>Une application web interactive pour visualiser et analyser des données, avec des graphiques dynamiques et des rapports personnalisables.</p>
+          <div class="pills">
+            <span class="pill"><img src="assets/icons/python.svg" alt="">Python</span>
+            <span class="pill"><img src="assets/icons/streamlit.svg" alt="">Streamlit</span>
+            <span class="pill"><img src="assets/icons/postgres.svg" alt="">PostgreSQL</span>
+            <span class="pill"><img src="assets/icons/seaborn-icon.svg" alt="">Seaborn</span>
+          </div>
+          <span class="project__link project__link--muted">Projet personnel</span>
+        </article>
+
+        <a class="project reveal" href="https://github.com/juscarni/Studente--API" target="_blank" rel="noopener">
+          <div class="project__top"><span class="tag"><i aria-hidden="true"></i>Backend</span><span class="year">2026</span></div>
+          <h3>Studente API</h3>
+          <p>Un CRUD complet sur des étudiants (GET, POST, PUT, PATCH, DELETE), avec recherche par e-mail, date d'inscription ou moyenne.</p>
+          <div class="pills">
+            <span class="pill"><img src="assets/icons/spring.svg" alt="">Spring Boot</span>
+            <span class="pill"><img src="assets/icons/swagger.svg" alt="">OpenAPI</span>
+            <span class="pill">Lombok</span>
+          </div>
+          <span class="project__link">Voir sur GitHub <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5"/></svg></span>
+        </a>
+
+        <article class="project reveal">
+          <div class="project__top"><span class="tag"><i aria-hidden="true"></i>Data</span><span class="year">2025</span></div>
+          <h3>Projet de data science IBM</h3>
+          <p>Le projet final du parcours IBM sur Coursera : une analyse complète, du chargement et du nettoyage des données jusqu'aux graphiques.</p>
+          <div class="pills">
+            <span class="pill"><img src="assets/icons/pandas-icon.svg" alt="">Pandas</span>
+            <span class="pill"><img src="assets/icons/matplotlib-icon.svg" alt="">Matplotlib</span>
+          </div>
+          <span class="project__link project__link--muted">Certificat IBM</span>
+        </article>
+
+      </div>
+
+      <!-- ============ showcase: Snake, its captures and a playable web remake ============ -->
+      <article class="snk reveal" aria-labelledby="snk-title">
+        <div class="snk__stage">
+          <div class="snk__screen" data-snk>
+            <div class="snk__bar">
+              <span class="snk__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="snk__file">snake.jar</span>
+            </div>
+            <div class="snk__view">
+              <!-- the captures -->
+              <button class="snk__shots" type="button" aria-label="Agrandir la capture affichée" data-snk-zoom>
+                <span class="snk__slide is-on" data-bg="gameplay"><img src="assets/img/snake/snake-gameplay.png" alt="Snake en partie : le serpent vert avance vers une pomme rouge, score 3, boutons Pause et Restart, signé Made by Juscarni" width="988" height="695"></span>
+                <span class="snk__slide" data-bg="menu"><img src="assets/img/snake/snake-menu.png" alt="Menu de Snake sur un décor de jungle : Start game, Historique, Option, Level, Exit" width="482" height="702" loading="lazy"></span>
+                <span class="snk__slide" data-bg="game-over"><img src="assets/img/snake/snake-game-over.png" alt="Écran Game over de Snake, score 3" width="990" height="693" loading="lazy"></span>
+              </button>
+            </div>
+          </div>
+          <div class="snk__thumbs" role="tablist" aria-label="Captures de Snake" data-snk-thumbs>
+            <button class="thumb is-on" type="button" role="tab" aria-selected="true" data-to="0" data-label="En partie"><img src="assets/img/snake/snake-gameplay.png" alt=""><span>En partie</span><i class="thumb__bar" aria-hidden="true"></i></button>
+            <button class="thumb" type="button" role="tab" aria-selected="false" data-to="1" data-label="Menu principal"><img src="assets/img/snake/snake-menu.png" alt="" loading="lazy"><span>Menu</span><i class="thumb__bar" aria-hidden="true"></i></button>
+            <button class="thumb" type="button" role="tab" aria-selected="false" data-to="2" data-label="Game over"><img src="assets/img/snake/snake-game-over.png" alt="" loading="lazy"><span>Game over</span><i class="thumb__bar" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+        <div class="snk__copy">
+          <div class="project__top"><span class="tag"><i aria-hidden="true"></i>Jeu vidéo · premier projet</span><span class="year">2025</span></div>
+          <h3 id="snk-title" class="snk__title">Snake</h3>
+          <p class="aegis__motto">Le classique, réécrit en Java Swing</p>
+          <p class="aegis__lead">Mon premier jeu complet en Java Swing : un menu illustré, un serpent qui grandit à chaque pomme, des niveaux de plus en plus rapides, des sons et un historique des parties. Le projet où j'ai appris à structurer une application orientée objet.</p>
+          <ul class="snk__feats">
+            <li><b>Architecture modulaire</b><span>Des classes Snake, Food, Board et GameManager, chacune avec un rôle clair.</span></li>
+            <li><b>Score et niveaux</b><span>Un score en direct et une difficulté qui augmente avec la vitesse.</span></li>
+            <li><b>Menus et options</b><span>Démarrer, historique, options et choix du niveau, sur un décor illustré.</span></li>
+            <li><b>Images et sons</b><span>Gestion des événements clavier et des ressources multimédias.</span></li>
+          </ul>
+          <div class="aegis__foot">
+            <div class="pills">
+              <span class="pill"><img src="assets/icons/java.svg" alt="">Java</span>
+              <span class="pill">Swing</span>
+              <span class="pill">POO</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================================================================ SKILLS -->
+  <section class="section" id="competences" aria-labelledby="competences-title">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow">Compétences</span>
+        <h2 id="competences-title">Ma boîte à outils</h2>
+        <p>Les langages, frameworks et outils que j'utilise dans mes projets et pendant mon stage.</p>
+      </div>
+      <div class="skills">
+        <article class="skill reveal">
+          <div class="skill__head"><span class="num">01</span><h3>Data et machine learning</h3></div>
+          <p>Régression, feature engineering, Random Forest, XGBoost, évaluation par MAE et R². Web scraping, CSV et JSON, nettoyage des données.</p>
+          <div class="stack">
+            <span><span class="tile"><img src="assets/icons/python.svg" alt=""></span>Python</span>
+            <span><span class="tile"><img src="assets/icons/pandas-icon.svg" alt=""></span>Pandas</span>
+            <span><span class="tile"><img src="assets/icons/numpy.svg" alt=""></span>NumPy</span>
+            <span><span class="tile"><img src="assets/icons/scipy.svg" alt=""></span>SciPy</span>
+            <span><span class="tile"><img src="assets/icons/scikitlearn.svg" alt=""></span>Scikit-learn</span>
+            <span class="txt">XGBoost</span>
+            <span class="txt">Requests</span>
+            <span class="txt">BeautifulSoup</span>
+          </div>
+        </article>
+        <article class="skill reveal">
+          <div class="skill__head"><span class="num">02</span><h3>Backend Java</h3></div>
+          <p>Java 21 et POO avancée, API REST, relations Many-to-Many, Basic Auth, rôles et mots de passe en BCrypt, Thymeleaf et Bean Validation.</p>
+          <div class="stack">
+            <span><span class="tile"><img src="assets/icons/java.svg" alt=""></span>Java</span>
+            <span><span class="tile"><img src="assets/icons/spring.svg" alt=""></span>Spring Boot</span>
+            <span class="txt">Spring Security</span>
+            <span><span class="tile"><img src="assets/icons/hibernate.svg" alt=""></span>Hibernate</span>
+            <span><span class="tile"><img src="assets/icons/swagger.svg" alt=""></span>Swagger</span>
+            <span><span class="tile"><img src="assets/icons/thymeleaf-icon.svg" alt=""></span>Thymeleaf</span>
+            <span><span class="tile tile--wide"><img src="assets/icons/maven.svg" alt=""></span>Maven</span>
+          </div>
+        </article>
+        <article class="skill reveal">
+          <div class="skill__head"><span class="num">03</span><h3>Bases de données et visualisation</h3></div>
+          <p>Modélisation relationnelle et requêtes SQL, tableaux de bord et graphiques pour présenter des résultats.</p>
+          <div class="stack">
+            <span><span class="tile"><img src="assets/icons/postgres.svg" alt=""></span>PostgreSQL</span>
+            <span><span class="tile"><img src="assets/icons/mysql.svg" alt=""></span>MySQL</span>
+            <span><span class="tile tile--wide"><img src="assets/icons/streamlit.svg" alt=""></span>Streamlit</span>
+            <span><span class="tile"><img src="assets/icons/matplotlib-icon.svg" alt=""></span>Matplotlib</span>
+            <span><span class="tile"><img src="assets/icons/seaborn-icon.svg" alt=""></span>Seaborn</span>
+          </div>
+        </article>
+        <article class="skill reveal">
+          <div class="skill__head"><span class="num">04</span><h3>Conception et outils</h3></div>
+          <p>Design patterns MVC, Observer, Factory et Singleton, code modulaire, Git au quotidien. Bases du web : HTML5, CSS3 et JavaScript.</p>
+          <div class="stack">
+            <span><span class="tile"><img src="assets/icons/git.svg" alt=""></span>Git</span>
+            <span><span class="tile"><img src="assets/icons/github.svg" alt=""></span>GitHub</span>
+            <span><span class="tile"><img src="assets/icons/intellij-idea.svg" alt=""></span>IntelliJ IDEA</span>
+            <span><span class="tile"><img src="assets/icons/visual-studio-code.svg" alt=""></span>VS Code</span>
+            <span><span class="tile"><img src="assets/icons/pycharm.svg" alt=""></span>PyCharm</span>
+            <span><span class="tile"><img src="assets/icons/jupyter.svg" alt=""></span>Jupyter</span>
+            <span><span class="tile"><img src="assets/icons/eclipse-icon.svg" alt=""></span>Eclipse</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ PATH -->
+  <section class="section" id="parcours" aria-labelledby="parcours-title">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="eyebrow">Parcours</span>
+        <h2 id="parcours-title">Formation et certifications</h2>
+      </div>
+      <div class="path">
+        <div class="timeline reveal">
+          <div class="tl">
+            <span class="tl__year">En cours</span>
+            <div>
+              <h3>Licence en ingénierie informatique et électronique</h3>
+              <div class="tl__org">Università degli Studi di Perugia · 3e année</div>
+              <p>Algorithmes, structures de données, bases de données, systèmes d'exploitation, architecture des ordinateurs, programmation orientée objet.</p>
+            </div>
+          </div>
+          <div class="tl">
+            <span class="tl__year">2026</span>
+            <div>
+              <h3>Spring Boot, Spring et Hibernate</h3>
+              <div class="tl__org"><span class="tile"><img src="assets/icons/udemy.svg" alt=""></span>Chad Darby · Udemy</div>
+              <p>Spring MVC, Spring Data JPA, Hibernate et Spring Security, avec des API REST en CRUD complet, des relations entre entités et l'authentification.</p>
+            </div>
+          </div>
+          <div class="tl">
+            <span class="tl__year">2025</span>
+            <div>
+              <h3>Python for Data Science, AI and Development</h3>
+              <div class="tl__org"><span class="tile tile--wide"><img src="assets/icons/ibm.svg" alt=""></span>IBM · Coursera</div>
+            </div>
+          </div>
+          <div class="tl">
+            <span class="tl__year">2025</span>
+            <div>
+              <h3>Python Project for Data Science</h3>
+              <div class="tl__org"><span class="tile tile--wide"><img src="assets/icons/ibm.svg" alt=""></span>IBM · Coursera</div>
+            </div>
+          </div>
+          <div class="tl">
+            <span class="tl__year">2025</span>
+            <div>
+              <h3>Data Visualization with Python</h3>
+              <div class="tl__org"><span class="tile tile--wide"><img src="assets/icons/ibm.svg" alt=""></span>IBM · Coursera</div>
+            </div>
+          </div>
+        </div>
+        <div class="side">
+          <div class="box reveal">
+            <h3>Langues</h3>
+            <ul class="lang">
+              <li><div class="lang__row">Français<span>Langue maternelle</span></div><div class="bar"><i class="bar__fill--native"></i></div></li>
+              <li><div class="lang__row">Italien<span>Courant</span></div><div class="bar"><i class="bar__fill--fluent"></i></div></li>
+              <li><div class="lang__row">Anglais<span>B2</span></div><div class="bar"><i class="bar__fill--b2"></i></div></li>
+            </ul>
+          </div>
+          <div class="box reveal">
+            <h3>Centres d'intérêt</h3>
+            <div class="interests">
+              <span class="pill">Intelligence artificielle</span>
+              <span class="pill">Visualisation de données</span>
+              <span class="pill">Architectures backend</span>
+              <span class="pill">Écosystème Spring</span>
+              <span class="pill">Jeux vidéo</span>
+              <span class="pill">Open source</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ CONTACT -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="contact reveal">
+        <span class="eyebrow">Contact</span>
+        <h2 id="contact-title">Travaillons ensemble.</h2>
+        <p>Je cherche un stage ou un premier poste junior, en data ou en backend Java. Je réponds à tous les messages.</p>
+        <div class="contact__cta">
+          <a class="btn btn--primary" href="mailto:juscarni@gmail.com">Écrire un e-mail <svg class="arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          <a class="btn btn--ghost" href="https://github.com/juscarni" target="_blank" rel="noopener">Voir mon GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" aria-labelledby="footer-title">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="logo" href="#accueil"><span class="logo__mark" aria-hidden="true">J</span><span id="footer-title">Nsayi Juscarni Geoffroy</span></a>
+        <p class="footer__role">Étudiant ingénieur en informatique · Data science et backend Java</p>
+        <p class="footer__pitch">Machine learning en Python, API REST en Java avec Spring Boot. Je cherche un stage ou un premier poste junior.</p>
+        <span class="status"><i aria-hidden="true"></i>Disponible pour un stage ou un poste junior</span>
+      </div>
+
+      <div class="footer__col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Contact</h3>
+        <ul class="footer__contact">
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="1.75" y="3.25" width="12.5" height="9.5" rx="1.5"/><path d="m2.5 4.5 5.5 4 5.5-4"/></svg>
+            <a href="mailto:juscarni@gmail.com">juscarni@gmail.com</a>
+            <button class="copy" type="button" data-copy="juscarni@gmail.com" aria-label="Copier l'adresse e-mail juscarni@gmail.com"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><rect x="5.25" y="5.25" width="8" height="8" rx="1.5"/><path d="M10.75 5.25V3.5a1.25 1.25 0 0 0-1.25-1.25H3.5A1.25 1.25 0 0 0 2.25 3.5v6a1.25 1.25 0 0 0 1.25 1.25h1.75"/></svg><span class="copy__ok">Copié</span></button>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 6 8 3l6.5 3L8 9 1.5 6Z"/><path d="M4 7.3v3.2c2.2 1.4 5.8 1.4 8 0V7.3"/></svg>
+            <a href="mailto:juscarnigeoffroy.nsayi@studenti.unipg.it" class="footer__long">juscarnigeoffroy.nsayi@studenti.unipg.it</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M3.2 1.8h2.3l1.2 3-1.6 1a8 8 0 0 0 4.1 4.1l1-1.6 3 1.2v2.3a1.5 1.5 0 0 1-1.6 1.5A12.2 12.2 0 0 1 1.7 3.4a1.5 1.5 0 0 1 1.5-1.6Z"/></svg>
+            <a href="tel:+393509129230">+39 350 912 9230</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 14s5-4.2 5-8A5 5 0 0 0 3 6c0 3.8 5 8 5 8Z"/><circle cx="8" cy="6" r="1.8"/></svg>
+            <span>Pérouse, Ombrie (Italie)</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>En ligne</h3>
+        <ul>
+          <li><a class="footer__social" href="https://github.com/juscarni" target="_blank" rel="noopener"><img src="assets/icons/github.svg" alt="" width="16" height="16">GitHub · juscarni</a></li>
+        </ul>
+        <h3 class="footer__h3-gap">Langues</h3>
+        <ul class="footer__langs">
+          <li>Français <span>natif</span></li>
+          <li>Italien <span>courant</span></li>
+          <li>Anglais <span>B2</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__word" aria-hidden="true">JUSCARNI</p>
+
+    <div class="footer__bottom">
+      <span>&copy; 2026 Nsayi Juscarni Geoffroy. Conçu et développé par moi-même.</span>
+      <a class="totop" href="#accueil">Retour en haut <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M4 7l4-4 4 4"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<dialog class="lightbox" aria-label="Captures d'Aegis Defender">
+  <div class="lightbox__inner">
+    <div class="lightbox__top">
+      <span class="lightbox__title"><span data-lb-label>En partie</span> <span class="lightbox__count" data-lb-count>1 / 4</span></span>
+      <button class="lightbox__btn" type="button" data-lb-close aria-label="Fermer"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg></button>
+    </div>
+    <div class="lightbox__body">
+      <button class="lightbox__btn lightbox__nav" type="button" data-lb-prev aria-label="Capture précédente"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 5 8l5 5"/></svg></button>
+      <img class="lightbox__img" src="assets/img/aegis/aegis-gameplay.png" alt="">
+      <button class="lightbox__btn lightbox__nav" type="button" data-lb-next aria-label="Capture suivante"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3 5 5-5 5"/></svg></button>
+    </div>
+    <p class="lightbox__hint">Flèches pour naviguer, Échap pour fermer</p>
+  </div>
+</dialog>
+
+<script src="js/main.js"></script>
+</body>
+</html>
