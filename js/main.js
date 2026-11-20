@@ -11,12 +11,12 @@
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
   // phone menu
-  function closeMenu() { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Ouvrir le menu'); document.body.style.overflow = ''; }
+  function closeMenu() { nav.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Apri il menu'); document.body.style.overflow = ''; }
   toggle.addEventListener('click', function () {
     var open = !nav.classList.contains('is-open');
     nav.classList.toggle('is-open', open);
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    toggle.setAttribute('aria-label', open ? 'Chiudi il menu' : 'Apri il menu');
     document.body.style.overflow = open ? 'hidden' : '';
   });
   nav.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeMenu); });
@@ -142,7 +142,7 @@
     return {
       open: function (items, i, onClose) {
         list = items; done = onClose; back = document.activeElement; show(i);
-        lb.setAttribute('aria-label', 'Captures');
+        lb.setAttribute('aria-label', 'Screenshot');
         if (lb.showModal) lb.showModal(); else lb.setAttribute('open', '');
         document.body.style.overflow = 'hidden';
       }

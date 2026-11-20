@@ -217,7 +217,7 @@ a.project:hover .project__link svg { transform: translate(2px, -2px); }
 .contact .btn--ghost:hover { background: rgb(255 255 255 / .08); border-color: #fff; }
 
 /* ------------------------------------------------------------------ footer */
-#contact { padding-bottom: clamp(56px, 7vw, 96px); }
+#contatti { padding-bottom: clamp(56px, 7vw, 96px); }
 .footer .logo { color: var(--text); }
 .footer { position: relative; overflow: hidden; padding: clamp(56px, 7vw, 88px) 0 28px; border-top: 1px solid var(--line); background: radial-gradient(60% 80% at 15% 0%, rgb(34 197 220 / .07), transparent 60%), #050505; color: var(--text-2); font-size: 15px; }
 .footer::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: .6; }
